@@ -47,7 +47,7 @@ export default function ContactSection() {
     <>
       <Header />
       
-      <div className="bg-gray-50 py-20">
+      <div className="bg-gray-300 py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Section Header */}
           <div className="text-center mb-16">

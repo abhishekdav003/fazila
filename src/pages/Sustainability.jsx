@@ -117,7 +117,7 @@ export default function SustainabilitySection() {
   return (
     <>
       <Header />
-    <div className="w-full bg-gradient-to-b from-gray-50 to-white">
+    <div className="w-full bg-gray-300">
       {/* Sustainability Hero Section */}
       <div className="w-full py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Search, ShoppingBag, Heart, Filter, X } from "lucide-react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function ProductPage() {
   // Full product data array as provided
@@ -406,20 +408,10 @@ export default function ProductPage() {
   }, [searchTerm, category, sortOption]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+    <div className="min-h-screen bg-gray-200">
       {/* Navigation */}
-      <nav className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <h1 className="text-xl font-bold text-gray-900">FAZILAT ENTERPRISES</h1>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </nav>
+      <Header />
 
     
 
@@ -587,6 +579,8 @@ export default function ProductPage() {
      
 
 
-    </div>
+      </div>
+      <Footer />
+      </>
   );
 } 
