@@ -9,7 +9,7 @@ const HeroAboutUsSection = () => {
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">About us</h2>
           
           <p className="text-gray-600 mb-4">
-            As trends evolve, so do the techniques to execute them. Sonu Exim's embroidery division is equipped with modern sampling machines, skilled hand embroiderers, and Adda embroidery workers.
+            As trends evolve, so do the techniques to execute them. Fazilat Enterprises's embroidery division is equipped with modern sampling machines, skilled hand embroiderers, and Adda embroidery workers.
           </p>
           
           <p className="text-gray-600 mb-4">

@@ -117,7 +117,7 @@ export default function SustainabilitySection() {
   return (
     <>
       <Header />
-    <div className="w-full bg-gray-300">
+    <div className="w-full py-10 ">
       {/* Sustainability Hero Section */}
       <div className="w-full py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
@@ -143,19 +143,19 @@ export default function SustainabilitySection() {
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <div className="h-10 w-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                <div className="h-10 w-10 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <ChevronRight className="h-5 w-5 text-white" />
                 </div>
                 <p className="ml-4 text-gray-200">Five eco-certified production facilities worldwide</p>
               </div>
               <div className="flex items-center">
-                <div className="h-10 w-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                <div className="h-10 w-10 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <ChevronRight className="h-5 w-5 text-white" />
                 </div>
                 <p className="ml-4 text-gray-200">Water recycling systems in all manufacturing plants</p>
               </div>
               <div className="flex items-center">
-                <div className="h-10 w-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                <div className="h-10 w-10 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <ChevronRight className="h-5 w-5 text-white" />
                 </div>
                 <p className="ml-4 text-gray-200">Zero landfill waste policy across production</p>
@@ -167,7 +167,7 @@ export default function SustainabilitySection() {
             <video
               ref={videoRef}
               className="absolute inset-0 w-full h-full object-cover"
-              poster="/api/placeholder/800/800"
+              
               loop
               muted
               playsInline
@@ -177,7 +177,7 @@ export default function SustainabilitySection() {
             </video>
             
             <button 
-              className="absolute inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-20 transition-all"
+              className="absolute inset-0 w-full h-full flex items-center justify-center bg-black opacity-10 hover:bg-opacity-20 transition-all"
               onClick={handleVideoToggle}
               aria-label={isPlaying ? "Pause video" : "Play video"}
             >
@@ -203,7 +203,7 @@ export default function SustainabilitySection() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex items-center px-6 py-4 text-lg font-medium transition-all ${
                   activeTab === tab.id 
-                    ? 'text-green-600 border-b-2 border-green-600 -mb-px' 
+                    ? 'text-indigo-600 border-b-2 border-indigo-600 -mb-px' 
                     : 'text-gray-500 hover:text-gray-800'
                 }`}
               >
@@ -224,7 +224,7 @@ export default function SustainabilitySection() {
                   key={index} 
                   className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-all"
                 >
-                  <p className="text-4xl md:text-5xl font-bold text-green-600 mb-2">{stat.value}</p>
+                  <p className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">{stat.value}</p>
                   <p className="text-gray-700">{stat.label}</p>
                 </div>
               ))}
@@ -238,8 +238,8 @@ export default function SustainabilitySection() {
                   key={index} 
                   className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all"
                 >
-                  <div className="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                    <Leaf className="h-5 w-5 text-green-600" />
+                  <div className="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center mb-4">
+                    <Leaf className="h-5 w-5 text-indigo-600" />
                   </div>
                   <h4 className="text-xl font-medium mb-3 text-gray-800">{initiative.title}</h4>
                   <p className="text-gray-600">{initiative.description}</p>

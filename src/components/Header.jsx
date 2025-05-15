@@ -30,17 +30,17 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white'}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="logo">
           <Link to="/" className="flex items-center">
             <img 
-              src="/sustain.jpeg" 
-              alt="Sonu Exim Pvt Ltd" 
+              src="/logo.jpeg" 
+              alt="Fazilat Enterprises" 
               className="h-12 w-12 rounded-full shadow-sm"
             />
-            <span className={`ml-2 font-bold text-lg hidden sm:block transition-colors ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-              Falilat Enterprises
+            <span className={`ml-2 font-bold text-lg hidden sm:block transition-colors ${scrolled ? 'text-gray-800' : 'text-black'}`}>
+              Fazilat Enterprises
             </span>
           </Link>
         </div>
@@ -49,27 +49,32 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
-              <Link to="/" className={`font-medium hover:text-blue-600 transition-all ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              <Link to="/" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-800' : 'text-black'}`}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className={`font-medium hover:text-blue-600 transition-all ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              <Link to="/about" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-800' : 'text-black'}`}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="/products" className={`font-medium hover:text-blue-600 transition-all ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              <Link to="/product" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-800' : 'text-black'}`}>
                 Products
               </Link>
             </li>
             <li>
-              <Link to="/sustainability" className={`font-medium hover:text-blue-600 transition-all ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              <Link to="/infrastructure" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-800' : 'text-black'}`}>
+                Infrastructure
+              </Link>
+            </li>
+            <li>
+              <Link to="/sustainability" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-800' : 'text-black'}`}>
                 Sustainability
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={`font-medium hover:text-blue-600 transition-all ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+              <Link to="/contact" className={`font-medium hover:text-gray-700 transition-all ${scrolled ? 'text-gray-900' : 'text-black'}`}>
                 Contact
               </Link>
             </li>
@@ -79,7 +84,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <button 
           onClick={toggleMobileMenu}
-          className={`md:hidden p-2 rounded-md focus:outline-none ${scrolled ? 'text-gray-800' : 'text-white'}`}
+          className={`md:hidden p-2 rounded-md focus:outline-none ${scrolled ? 'text-gray-800' : 'text-black'}`}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? 

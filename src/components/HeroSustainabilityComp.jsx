@@ -20,10 +20,12 @@ const SustainabilitySection = () => {
           {/* Content box with semi-transparent background */}
           <div className="w-full md:w-1/2 lg:w-5/12 bg-gray-900 bg-opacity-75 p-8 text-white">
             <h2 className="text-2xl font-semibold mb-6">Sustainability</h2>
+            <h3 className='text-xl font-semibold mb-2'>A Cutting-Edge Design Studio Mastering Fashion's Evolution</h3>
             
             <p className="mb-6">
-              We have full-fledged design studio which stays up-to-date with the rapidly changing fashion world and specializes in embroidery and bead work. We make sure that we have the best designers and skilled or semi-skilled workers working with us.
+              At our design studio, we blend creativity with craftsmanship to stay ahead in the fast-paced world of fashion. Specializing in intricate embroidery and exquisite beadwork, we bring timeless artistry to contemporary designs. Our teams consists of top-tier designers and highly skilled artisans, ensuring every piece reflects precision, innovation, and unparalleled quality.
             </p>
+            <p>From concept of creation, we transform visions into wearable masterpieces.</p>
             
 
           </div>
